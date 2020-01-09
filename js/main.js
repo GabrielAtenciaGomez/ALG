@@ -114,6 +114,7 @@ jQuery(document).ready(function( $ ) {
     (index === 0) ?
     introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "' class='active'></li>") :
     introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "'></li>");
+
   });
 
   $(".carousel").swipe({
@@ -165,6 +166,10 @@ jQuery(document).ready(function( $ ) {
     dots: true,
     loop: true,
     items: 1
+  });
+
+  $("#btnfacebook").click(function(){
+    window.location.href='https://www.facebook.com/ALG.ingenieria.y.construccion/';
   });
 
 });
