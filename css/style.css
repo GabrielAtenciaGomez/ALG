@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 #intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
 #intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
-  transition: 2s;
+  transition: 0.5s;
 }
 
 #intro .carousel-fade .carousel-inner .carousel-item-next,
