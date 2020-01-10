@@ -740,10 +740,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Call To Action Section
 --------------------------------*/
-#call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
+#call-to-action::before {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)) fixed center center;
   background-size: cover;
-  padding: 60px 0;
+  padding: 10px 0;
+
 }
 
 #call-to-action h3 {
@@ -835,7 +836,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters span {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 32px;
   display: block;
   color: #18d26e;
 }
