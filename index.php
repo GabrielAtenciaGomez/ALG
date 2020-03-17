@@ -15,6 +15,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js?render=6Le7KdoUAAAAACg9X1gXmzhPJBaQzdCv_bJ1rOKy"></script>
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -649,8 +650,8 @@
           <div class="col-lg-12">
             <ul id="portfolio-flters" class="portfolio-flters-inf">
               <li data-filter="*" class="filter-active">Todo</li>
-              <li data-filter=".Avelino-Morro">Avelino Morro Mazatlan</li>
-              <li data-filter=".Jesus-Morro">Jesus Morro Mazatlan</li>
+              <li data-filter=".Avelino-Morro">Avelino Morro Mazatan</li>
+              <li data-filter=".Jesus-Morro">Jesus Morro Mazatan</li>
               <li data-filter=".Las-penias">Las Peñas</li>
               <li data-filter=".tama_centro">Tama centro</li>
               <li data-filter=".YUCUNAMA">yucunama</li>
@@ -669,7 +670,7 @@
                 <a href="img/portfolio/INFRAESTRUCTURA/ABELINO_MORRO_MAZATAN/1.jpg" data-lightbox="Avelino-Morro" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
               </figure>
               <div class="portfolio-info">
-                <h4><a href="#">Avelino Morro Mazatlan</a></h4>
+                <h4><a href="#">Avelino Morro Mazatan</a></h4>
               </div>
             </div>
           </div> <!-- Avelino-Morro -->
@@ -682,7 +683,7 @@
                 <a href="img/portfolio/INFRAESTRUCTURA/ABELINO_MORRO_MAZATAN/2.jpg" data-lightbox="Avelino-Morro" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
               </figure>
               <div class="portfolio-info">
-                <h4><a href="#">Avelino Morro Mazatlan</a></h4>
+                <h4><a href="#">Avelino Morro Mazatan</a></h4>
               </div>
             </div>
           </div> <!-- Avelino-Morro -->
@@ -695,7 +696,7 @@
                 <a href="img/portfolio/INFRAESTRUCTURA/JESUS_MORRO_MAZATAN/1.jpg" data-lightbox="Jesus-Morro" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
               </figure>
               <div class="portfolio-info">
-                <h4><a href="#">Jesus Morro Mazatlan</a></h4>
+                <h4><a href="#">Jesus Morro Mazatan</a></h4>
               </div>
             </div>
           </div> <!-- JESUS MORRO -->
@@ -708,7 +709,7 @@
                 <a href="img/portfolio/INFRAESTRUCTURA/JESUS_MORRO_MAZATAN/2.jpg" data-lightbox="Jesus-Morro" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
               </figure>
               <div class="portfolio-info">
-                <h4><a href="#">Jesus Morro Mazatlan</a></h4>
+                <h4><a href="#">Jesus Morro Mazatan</a></h4>
               </div>
             </div>
           </div> <!-- JESUS MORRO -->
@@ -814,8 +815,6 @@
       </div>
     </section><!-- #portfolio -->
 
-
-
     <!--==========================
       Clients Section
     ============================-->
@@ -838,6 +837,7 @@
 
       </div>
     </section><!-- #clients -->
+
 
     <!--==========================
       Contact Section
@@ -880,25 +880,100 @@
 
       </div>
     </section><!-- #contact -->
-
     <section id="cotizar">
-      <div class="container">
-        <div class="section-header">
-          <h3>cotizar</h3>
-          <p>ALG siempre con tigo, para realizar una cotizacion por favor llenar todos los campos requeridos:</p>
+      <div class="container py-5">
+        <div class="container-fluid">
+
+          <div class="section-header">
+            <h3>cotizar</h3>
+            <p>ALG siempre contigo, para realizar una cotizacion por favor llenar todos los campos requeridos:</p>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-4">
+              <!-- -->
+
+              <div class="card text-center">
+                <div class="card-header">
+                  <strong> Quiero una cotizacion </strong>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+
+                <a class="card-footer btn text-white bg-success" data-toggle="modal" data-target="#cotizarPanel" data-whatever="@getbootstrap">Quiero cotizar</a>
+
+              </div>
+            </div>
+
+            <div class="modal fade" id="cotizarPanel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Nueva cotizacion</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="formCotizar" enctype="multipart/form-data" action="sendEmail.php" method="post">
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Nombre:</label>
+                        <input type="text" required minlength="2" class="form-control" name="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Apellidos:</label>
+                        <input type="text" required class="form-control" name="recipient-apellido">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Numero telefonico donde le llegara la cotizacion que cuente con whatsapp:</label>
+                        <input type="number" required class="form-control" name="recipient-telefono">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Correo:</label>
+                        <input type="email" required class="form-control" name="recipient-correo">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="message-text" class="col-form-label">¿Que Porcentaje de tu consumo de nergia quieres reducir?</label>
+                        <input type="number" required class="form-control" min="1" max="100" name="recipient-reduccion"></input>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" name="message-text"></textarea>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="ejemplo_archivo_1">Selecciona la foto del recibo de energia no mayo a 2 meses.</label>
+
+                        <input type="file" required name="imagen" accept="image/x-png,image/gif,image/jpeg">
+                      </div>                   
+                      
+                      <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" id="enviarFormCotizar" class="btn btn-primary">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
         </div>
-
-        <form action="">
-
-
-        </form>
-
-
       </div>
     </section>
 
   </main>
-
   <!--==========================
     Footer
   ============================-->
@@ -926,7 +1001,7 @@
             <h4>Contactanos</h4>
             <p>
               <strong>Direccion:</strong> calle Circuito Santa Rosa, Col. Nezacubi, Oaxaca de Juárez. Cp. 68010 <br>
-              <strong>OFC. central: </strong>+52 951-132-1988 <br>
+              <strong>OFC. central: </strong>+52 951-132-1988 - +52 951-305-71-44<br>
               <strong>Energia Renovable: </strong> +52 951-127-3757 <br>
               <strong>Infrastrucura: </strong> +52 951-259-5014<br>
               <strong>Administracion: </strong> +52 951-142-7747<br>
@@ -963,9 +1038,12 @@
   <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+
 
 
 

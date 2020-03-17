@@ -173,8 +173,10 @@ jQuery(document).ready(function ($) {
 
   });
 
-  $("#btnfacebook").click(function () {
-    window.location.href = 'https://www.facebook.com/ALG.ingenieria.y.construccion/';
+  $("#enviarFormCotizar").click(function () {
+    if ($("#formCotizar").validate()) {
+      $("#formCotizar").submit();
+    }
   });
 
 
@@ -184,5 +186,13 @@ jQuery(document).ready(function ($) {
     time: 500
   });
 
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6Le7KdoUAAAAACg9X1gXmzhPJBaQzdCv_bJ1rOKy', { action: 'formulario' })
+      .then(function (token) {
+        var recaptchaResponse = document.getElementById('recaptchaResponse');
+        recaptchaResponse.value = token;
+      });
+  });
 
+  $("#formCotizar").validate();
 });

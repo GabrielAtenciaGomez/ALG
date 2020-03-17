@@ -4,9 +4,11 @@
   Author: BootstrapMade.com
   License: https://bootstrapmade.com/license/
 */
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   background: #fff;
   color: #666666;
@@ -37,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Back to top button */
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -55,6 +58,16 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 11;
 }
 
+.cotizar {
+  background: #18d26e;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  margin: 10px;
+}
+
 .back-to-top i {
   padding-top: 12px;
   color: #fff;
@@ -69,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 #header {
   padding: 30px 0;
   height: 92px;
@@ -91,11 +105,9 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
 }
 
-
 @media (min-width: 1024px) {
   #header #logo {
     padding-left: 60px;
-
   }
 }
 
@@ -132,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
+
 #intro {
   display: table;
   width: 100%;
@@ -204,23 +217,16 @@ h1, h2, h3, h4, h5, h6 {
   transition-property: opacity;
 }
 
-#intro .carousel-fade .carousel-inner .carousel-item,
-#intro .carousel-fade .carousel-inner .active.carousel-item-left,
-#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+#intro .carousel-fade .carousel-inner .carousel-item, #intro .carousel-fade .carousel-inner .active.carousel-item-left, #intro .carousel-fade .carousel-inner .active.carousel-item-right {
   opacity: 0;
 }
 
-#intro .carousel-fade .carousel-inner .active,
-#intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
-#intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+#intro .carousel-fade .carousel-inner .active, #intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left, #intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
   transition: 0.5s;
 }
 
-#intro .carousel-fade .carousel-inner .carousel-item-next,
-#intro .carousel-fade .carousel-inner .carousel-item-prev,
-#intro .carousel-fade .carousel-inner .active.carousel-item-left,
-#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+#intro .carousel-fade .carousel-inner .carousel-item-next, #intro .carousel-fade .carousel-inner .carousel-item-prev, #intro .carousel-fade .carousel-inner .active.carousel-item-left, #intro .carousel-fade .carousel-inner .active.carousel-item-right {
   left: 0;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -268,7 +274,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+
 /* Nav Menu Essentials */
+
 .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
@@ -288,12 +296,11 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul, .nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -307,6 +314,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Nav Menu Arrows */
+
 .sf-arrows .sf-with-ul {
   padding-right: 30px;
 }
@@ -325,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Nav Meu Container */
+
 #nav-menu-container {
   float: right;
   margin: 0;
@@ -343,6 +352,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Nav Meu Styling */
+
 .nav-menu a {
   padding: 0 8px 10px 8px;
   text-decoration: none;
@@ -355,11 +365,11 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+.nav-menu li:hover>a, .nav-menu>.menu-active>a {
   color: #18d26e;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 10px;
 }
 
@@ -383,7 +393,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   color: #18d26e;
 }
 
@@ -392,6 +402,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile Nav Toggle */
+
 #mobile-nav-toggle {
   position: fixed;
   right: 0;
@@ -418,6 +429,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile Nav Styling */
+
 #mobile-nav {
   position: fixed;
   top: 0;
@@ -497,6 +509,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile Nav body classes */
+
 body.mobile-nav-active {
   overflow: hidden;
 }
@@ -512,8 +525,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
+
 /* Sections Header
 --------------------------------*/
+
 .section-header h3 {
   font-size: 32px;
   color: #111;
@@ -522,6 +537,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   position: relative;
   padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .section-header h3::before {
@@ -554,12 +570,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Section with background
 --------------------------------*/
+
 .section-bg {
   background: #f7f7f7;
 }
 
 /* Featured Services Section
 --------------------------------*/
+
 #featured-services {
   background: #000;
 }
@@ -602,6 +620,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* About Us Section
 --------------------------------*/
+
 #about {
   background: url("../img/about-bg.jpg") center top no-repeat fixed;
   background-size: cover;
@@ -697,6 +716,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Services Section
 --------------------------------*/
+
 #services {
   background: #fff;
   background-size: cover;
@@ -742,11 +762,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Call To Action Section
 --------------------------------*/
+
 #call-to-action::before {
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)) fixed center center;
   background-size: cover;
   padding: 10px 0;
-
 }
 
 #call-to-action h3 {
@@ -781,6 +801,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Call To Action Section
 --------------------------------*/
+
 #skills {
   padding: 60px 0;
 }
@@ -802,7 +823,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #skills .progress .skill .val {
   float: right;
   font-style: normal;
-  
   margin: 0 20px 0 0;
 }
 
@@ -814,6 +834,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Facts Section
 --------------------------------*/
+
 #facts {
   background: url("../img/facts-bg.jpg") center top no-repeat fixed;
   background-size: cover;
@@ -860,6 +881,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Portfolio Section
 --------------------------------*/
+
 #portfolio {
   padding: 60px 0;
 }
@@ -1006,18 +1028,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Clients Section
 --------------------------------*/
+
 #clients {
   padding: 60px 0;
 }
 
-
 #img-clients {
- /* border: #000 2px solid;
-*/display: flex;
-align-items: flex-start;
-justify-content: space-evenly;
-align-items: center;
-
+  /* border: #000 2px solid;
+*/
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #clients img {
@@ -1025,7 +1047,6 @@ align-items: center;
   opacity: 0.5;
   transition: 0.3s;
   padding: 15px 20;
-
   /*border: #000 2px solid;
 ¨*/
 }
@@ -1033,8 +1054,6 @@ align-items: center;
 #clients img:hover {
   opacity: 1;
 }
-
-
 
 #clients .owl-nav, #clients .owl-dots {
   margin-top: 5px;
@@ -1056,6 +1075,7 @@ align-items: center;
 
 /* Testimonials Section
 --------------------------------*/
+
 #testimonials {
   padding: 60px 0;
 }
@@ -1134,6 +1154,7 @@ align-items: center;
 
 /* Team Section
 --------------------------------*/
+
 #team {
   background: #fff;
   padding: 60px 0;
@@ -1209,6 +1230,7 @@ align-items: center;
 
 /* Contact Section
 --------------------------------*/
+
 #contact {
   padding: 60px 0;
 }
@@ -1315,9 +1337,34 @@ align-items: center;
   background: #13a456;
 }
 
+/* Cotizar Section
+--------------------------------*/
+
+#Cotizar {
+  padding: 60px 0;
+}
+
+#cotizar .add {
+  background: #000;
+  border-radius: 0 0 4px 4px;
+  display: inline-block;
+  max-width: 20%;
+}
+
+@media (min-width: 768px) {
+  #Cotizar {
+    width: 5%;
+  }
+
+  h1 {
+    
+  }
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 #footer {
   background: #000;
   padding: 0 0 30px 0;
@@ -1475,6 +1522,3 @@ align-items: center;
   font-size: 13px;
   color: #ddd;
 }
-
-
-
